@@ -1,7 +1,15 @@
 # Introduction to Object-Oriented Programming with Python: Creating and Using Classes
 
 # Class Definition
+class Car:
+  def __init__(self, make, model):
+    self.make = make
+    self.model = model
+  def start_engine(self):
+    print(f"The {self.make} {self.model}'s engine is running")
 
+car1 = Car("Porsche", "F1")
+car1.start_engine()
 # Constructor (Initialization) - __init__ method
 
 # Encapsulation: Attributes (make and model) are encapsulated within the class.
